@@ -1,3 +1,5 @@
+<link rel="stylesheet" type="text/css" href="styles.css">
+
 # 🧙‍♀️✨ Understanding Qubits and Measurement in Quantum Computing 🚀🌌
 
 ## What is a Qubit? 🧩
