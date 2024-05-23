@@ -3,17 +3,20 @@
 # 🧙‍♀️✨ Qubits Neuron Class 🚀🌌
 
 
-## What is a Qubit? 🧩
+<h2>What is a Qubit? 🧩</h2>
 
-A qubit is the basic unit of quantum information, just like a bit in classical computing. However, qubits are magical because they can be in a superposition of states!
+<p>A qubit is the basic unit of quantum information, just like a bit in classical computing. However, qubits are magical because they can be in a superposition of states!</p>
 
-In simple terms:
+<p>In simple terms:</p>
 
-- A classical bit can be either `0` or `1`.
-- A qubit can be in a state |0⟩, |1⟩
-- or any superposition α|0⟩ + β|1⟩
-- where α and β are complex numbers.
-- Note: This is in [Hilbert Space](https://en.wikipedia.org/wiki/Hilbert_space)
+<ul>
+  <li>A classical bit can be either <code>0</code> or <code>1</code>.</li>
+  <li>A qubit can be in a state |0⟩, |1⟩</li>
+  <li>or any superposition α|0⟩ + β|1⟩</li>
+  <li>where α and β are complex numbers.</li>
+  <li>Note: This is in <a href="https://en.wikipedia.org/wiki/Hilbert_space">Hilbert Space</a></li>
+</ul>
+
 
 ## Measuring a Qubit 🔍
 
