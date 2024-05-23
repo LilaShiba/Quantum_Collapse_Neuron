@@ -1,6 +1,7 @@
 <link rel="stylesheet" type="text/css" href="styles.css">
 
-# 🧙‍♀️✨ Understanding Qubits and Measurement in Quantum Computing 🚀🌌
+# 🧙‍♀️✨ Qubits Neuron Class 🚀🌌
+
 
 ## What is a Qubit? 🧩
 
@@ -9,7 +10,9 @@ A qubit is the basic unit of quantum information, just like a bit in classical c
 In simple terms:
 
 - A classical bit can be either `0` or `1`.
-- A qubit can be in a state |0⟩, |1⟩, or any superposition α|0⟩ + β|1⟩, where α and β are complex numbers.
+- A qubit can be in a state |0⟩, |1⟩
+- or any superposition α|0⟩ + β|1⟩
+- where α and β are complex numbers.
 - Note: This is in [Hilbert Space](https://en.wikipedia.org/wiki/Hilbert_space)
 
 ## Measuring a Qubit 🔍
@@ -28,20 +31,20 @@ When we measure a qubit, we "collapse" its superposition to one of the basis sta
 ### Example in Python
 
 <pre><code>
-import numpy as np
-
-class Ket:
-    def __init__(self, alpha, beta):
-        self.state_vector = np.array([alpha, beta], dtype=complex)
-
-    def measure(self):
-        probabilities = np.abs(self.state_vector) ** 2
-        return np.random.choice([0, 1], p=probabilities)
-
-# Example usage
-alpha = 1/np.sqrt(2)
-beta = 1/np.sqrt(2)
-ket_instance = Ket(alpha, beta)
-measurement_result = ket_instance.measure()
-print(f"Measurement result: {measurement_result}")
+    import numpy as np
+    
+    class Ket:
+        def __init__(self, alpha, beta):
+            self.state_vector = np.array([alpha, beta], dtype=complex)
+    
+        def measure(self):
+            probabilities = np.abs(self.state_vector) ** 2
+            return np.random.choice([0, 1], p=probabilities)
+    
+    # Example usage
+    alpha = 1/np.sqrt(2)
+    beta = 1/np.sqrt(2)
+    ket_instance = Ket(alpha, beta)
+    measurement_result = ket_instance.measure()
+    print(f"Measurement result: {measurement_result}")
 </code></pre>
