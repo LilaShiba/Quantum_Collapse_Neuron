@@ -17,16 +17,21 @@ In simple terms:
 
 ## Measuring a Qubit 🔍
 
-When we measure a qubit, we "collapse" its superposition to one of the basis states:
+<p>When we measure a qubit, we "collapse" its superposition to one of the basis states:</p>
 
-- The probability of collapsing to |0⟩ is |α|<sup>2</sup>.
-- The probability of collapsing to |1⟩ is |β|<sup>2</sup>.
+<ul>
+  <li>The probability of collapsing to |0⟩ is |α|<sup>2</sup>.</li>
+  <li>The probability of collapsing to |1⟩ is |β|<sup>2</sup>.</li>
+</ul>
 
-### How It Works
+<h3>How It Works</h3>
 
-1. **State Vector:** The qubit is in a state α|0⟩ + β|1⟩.
-2. **Probabilities:** Calculate the probabilities |α|<sup>2</sup> and |β|<sup>2</sup>.
-3. **Random Choice:** Use these probabilities to randomly choose the measurement outcome.
+<ol>
+  <li><strong>State Vector:</strong> The qubit is in a state α|0⟩ + β|1⟩.</li>
+  <li><strong>Probabilities:</strong> Calculate the probabilities |α|<sup>2</sup> and |β|<sup>2</sup>.</li>
+  <li><strong>Random Choice:</strong> Use these probabilities to randomly choose the measurement outcome.</li>
+</ol>
+
 
 ### Example in Python
 
