@@ -16,7 +16,7 @@ The goal is to incorporate quantum holographic properties inside a simulated CNN
   <li>Note: This is in <a href="https://en.wikipedia.org/wiki/Hilbert_space">Hilbert Space</a>.</li>
 </ul>
 
-<p>Source: <a href="https://mitpressbookstore.mit.edu/book/9780262526678">Wikipedia: Qubit</a></p>
+<p>Source: <a href="https://mitpressbookstore.mit.edu/book/9780262526678">MIT: A Gentle Introduction to Quantum Computing</a></p>
 
 
 
