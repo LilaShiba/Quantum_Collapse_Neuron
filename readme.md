@@ -8,6 +8,7 @@ In simple terms:
 
 - A classical bit can be either `0` or `1`.
 - A qubit can be in a state |0⟩, |1⟩, or any superposition α|0⟩ + β|1⟩, where α and β are complex numbers.
+- Note: This is in [Hilbert Space](https://en.wikipedia.org/wiki/Hilbert_space)
 
 ## Measuring a Qubit 🔍
 
