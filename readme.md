@@ -2,7 +2,9 @@
 
 # 🧙‍♀️✨ Qubits Neuron Class 🚀🌌
 
-<img src='https://github.com/LilaShiba/Quantum_Collapse_Neuron/blob/main/imgs/hamiltonian.png'>
+
+![Hamiltonian Graph with Super Clusters](https://github.com/LilaShiba/Quantum_Collapse_Neuron/blob/main/imgs/hamiltonian.png)
+#### Hamiltonian Graph with Super Clusters
 
 The goal is to incorporate quantum holographic properties inside a simulated CNN
 
