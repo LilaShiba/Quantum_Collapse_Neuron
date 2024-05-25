@@ -29,7 +29,7 @@ The goal is to incorporate quantum holographic properties inside a simulated CNN
 <details>
   <summary>Braket Notation in Quantum Mechanics 🧙‍♀️🔮</summary>
   <br>
-  In quantum mechanics, **bra-ket notation** is essential for representing quantum states and operations. Let's dive into its mystical symbology:
+  In quantum mechanics, <a href='https://en.wikipedia.org/wiki/Bra%E2%80%93ket_notation'> **bra-ket notation** is essential for representing quantum states and operations</a>.
 
   - **Ket |α⟩**: Represents a quantum state vector. Example: |α⟩ could denote the state of a particle. 🌌
   - **Bra ⟨β|**: The conjugate transpose of a ket, representing the dual vector. 🔄
