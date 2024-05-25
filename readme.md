@@ -67,9 +67,9 @@ The goal is to incorporate quantum holographic properties inside a simulated CNN
     print(f"Measurement result: {measurement_result}")
 </code></pre>
 
-## Mimicking the Substrate as a Network Layer 🌌✨
+## Mimicking Superconductor Substrate as a Network Layer 🌌✨
 
-To achieve a simulated superfluid state as defined by the [local thermal equilibrium](https://phys.libretexts.org/Bookshelves/Astronomy__Cosmology/Supplemental_Modules_(Astronomy_and_Cosmology)/Cosmology/Astrophysics_(Richmond)/27%3A_(Local)_Thermodynamic_Equilibrium), we delve into simulating pressure & heat in particles and waves 🌙🪄
+To achieve a simulated superconductor state as defined by the [local thermal equilibrium](https://phys.libretexts.org/Bookshelves/Astronomy__Cosmology/Supplemental_Modules_(Astronomy_and_Cosmology)/Cosmology/Astrophysics_(Richmond)/27%3A_(Local)_Thermodynamic_Equilibrium), we delve into simulating pressure & heat in particles and waves by applying to the qubit class 🌙🪄
 
 TBD: 5/25/2024 (Branch: LTE (local thermal equilbrium)
 
