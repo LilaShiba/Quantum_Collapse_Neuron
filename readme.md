@@ -25,25 +25,30 @@ The goal is to incorporate quantum holographic properties inside a simulated CNN
 <p>Source: 1.) <a href="https://mitpressbookstore.mit.edu/book/9780262526678">MIT: A Gentle Introduction to Quantum Computing</a></p>
 
 <p> Source: 2.) <a href="https://mitpressbookstore.mit.edu/book/9780262038430">MIT: Holographic Quantum Matter</a></p>
-
+<br>
 <details>
   <summary>Braket Notation in Quantum Mechanics 🧙‍♀️🔮</summary>
   <br>
-  In quantum mechanics, <a href='https://en.wikipedia.org/wiki/Bra%E2%80%93ket_notation'> **bra-ket notation** is essential for representing quantum states and operations</a>.
+  In quantum mechanics, <a href='https://en.wikipedia.org/wiki/Bra%E2%80%93ket_notation'>bra-ket notation is essential for representing quantum states and operations</a>.
 
-  - **Ket |α⟩**: Represents a quantum state vector. Example: |α⟩ could denote the state of a particle. 🌌
-  - **Bra ⟨β|**: The conjugate transpose of a ket, representing the dual vector. 🔄
-  - **Inner Product ⟨β|α⟩**: Probability amplitude between states |β⟩ and |α⟩. ✨
-  - **Outer Product |α⟩⟨β|**: Operator that projects onto the state |α⟩. 🌀
+  <ul>
+    <li><strong>Ket |α⟩</strong>: Represents a quantum state vector. Example: |α⟩ could denote the state of a particle. 🌌</li>
+    <li><strong>Bra ⟨β|</strong>: The conjugate transpose of a ket, representing the dual vector. 🔄</li>
+    <li><strong>Inner Product ⟨β|α⟩</strong>: Probability amplitude between states |β⟩ and |α⟩. ✨</li>
+    <li><strong>Outer Product |α⟩⟨β|</strong>: Operator that projects onto the state |α⟩. 🌀</li>
+  </ul>
 
   Example in a qubit system:
-  - **Kets**: |0⟩, |1⟩
-  - **Bras**: ⟨0|, ⟨1|
-  - **Inner Product**: ⟨0|1⟩ = 0 (orthogonality) 🌠
-  - **Outer Product**: |0⟩⟨0| (projection operator) 🌙
+  <ul>
+    <li><strong>Kets</strong>: |0⟩, |1⟩</li>
+    <li><strong>Bras</strong>: ⟨0|, ⟨1|</li>
+    <li><strong>Inner Product</strong>: ⟨0|1⟩ = 0 (orthogonality) 🌠</li>
+    <li><strong>Outer Product</strong>: |0⟩⟨0| (projection operator) 🌙</li>
+  </ul>
 
   <br>
 </details>
+<br>
 
 
 
