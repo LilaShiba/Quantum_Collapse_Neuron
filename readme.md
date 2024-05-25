@@ -26,6 +26,25 @@ The goal is to incorporate quantum holographic properties inside a simulated CNN
 
 <p> Source: 2.) <a href="https://mitpressbookstore.mit.edu/book/9780262038430">MIT: Holographic Quantum Matter</a></p>
 
+<details>
+  <summary>Braket Notation in Quantum Mechanics 🧙‍♀️🔮</summary>
+  <br>
+  In quantum mechanics, **bra-ket notation** is essential for representing quantum states and operations. Let's dive into its mystical symbology:
+
+  - **Ket |α⟩**: Represents a quantum state vector. Example: |α⟩ could denote the state of a particle. 🌌
+  - **Bra ⟨β|**: The conjugate transpose of a ket, representing the dual vector. 🔄
+  - **Inner Product ⟨β|α⟩**: Probability amplitude between states |β⟩ and |α⟩. ✨
+  - **Outer Product |α⟩⟨β|**: Operator that projects onto the state |α⟩. 🌀
+
+  Example in a qubit system:
+  - **Kets**: |0⟩, |1⟩
+  - **Bras**: ⟨0|, ⟨1|
+  - **Inner Product**: ⟨0|1⟩ = 0 (orthogonality) 🌠
+  - **Outer Product**: |0⟩⟨0| (projection operator) 🌙
+
+  <br>
+</details>
+
 
 
 ## Measuring a Qubit 🔍
