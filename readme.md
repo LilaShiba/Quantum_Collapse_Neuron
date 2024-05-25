@@ -19,7 +19,7 @@ The goal is to incorporate quantum holographic properties inside a simulated CNN
   <li>A qubit can be in a state |0⟩, |1⟩, or any superposition α|0⟩ + β|1⟩ where α and β are complex numbers.</li>
   <li>Note: This is in <a href="https://en.wikipedia.org/wiki/Hilbert_space">Hilbert Space</a>.</li>
   <li>Note: Layer class demands a Hamiltioan <a href='https://en.wikipedia.org/wiki/Hamiltonian_path'> Graph</a></li>
-  <li>Note: Ideally and for ease sake this is in <a href="https://en.wikipedia.org/wiki/Orthonormality"> Orthonormal relationship <\a><\li>
+  <li>Note: Ideally and for ease sake this is in <a href='https://en.wikipedia.org/wiki/Orthonormality'> Orthonormal relationship </a></li>
 </ul>
 
 <p>Source: 1.) <a href="https://mitpressbookstore.mit.edu/book/9780262526678">MIT: A Gentle Introduction to Quantum Computing</a></p>
