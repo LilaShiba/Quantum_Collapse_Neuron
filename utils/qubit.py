@@ -7,11 +7,22 @@ class Ket:
 
     def __init__(self, label: int = 0, **kwargs: Dict[str, Any]):
         self.label = label
-        self.state_vector = np.array([1, 0], dtype=complex)  # Default to |0> state
+        self.state_vector = self.random_state_vector()  # Initialize to a random state
         # Process kwargs to initialize data points from a CSV file
         if 'csv_file' in kwargs:
             csv_file = kwargs['csv_file']
             self.load_data_from_csv(csv_file)
+
+    def random_state_vector(self):
+        '''Generate a random state vector |ψ⟩ = α|0⟩ + β|1⟩ with normalization.'''
+        # Generate random complex numbers for alpha and beta
+        alpha = np.random.rand() + 1j * np.random.rand()
+        beta = np.random.rand() + 1j * np.random.rand()
+        # Normalize the state vector
+        norm = np.sqrt(np.abs(alpha)**2 + np.abs(beta)**2)
+        alpha /= norm
+        beta /= norm
+        return np.array([alpha, beta], dtype=complex)
 
     def load_data_from_csv(self, csv_file: str, idx: int = 0):
         try:
@@ -47,6 +58,7 @@ class Ket:
         '''📏 Measure the qubit state in the computational basis.'''
         probabilities = np.abs(self.state_vector) ** 2
         return np.random.choice([0, 1], p=probabilities)
+
 
 # Example usage:
 # 🌟 Create an instance of Ket and apply gates
