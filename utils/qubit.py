@@ -63,8 +63,17 @@ class Ket:
 # Example usage:
 # 🌟 Create an instance of Ket and apply gates
 if __name__ == "__main__":
+    # Init with Data
     ket_instance = Ket(label=1, csv_file='quantum_neuron/utils/data/photon.csv')
     measurement_result = ket_instance.measure()
+    print(f"Measurement result: {measurement_result}")
+    # After Gate
+    ket_instance.apply_hadamard()
+    measurement_result = ket_instance.measure()
+    print(f"Measurement result: {measurement_result}")
+    # Random Init
+    ket_kat_bar = Ket(label='2')
+    measurement_result = ket_kat_bar.measure()
     print(f"Measurement result: {measurement_result}")
     # After Gate
     ket_instance.apply_hadamard()
