@@ -8,18 +8,20 @@ class Ket:
     def __init__(self, label: int = 0, **kwargs: Dict[str, Any]):
         self.label = label
         self.state_vector = np.array([1, 0], dtype=complex)  # Default to |0> state
-
-        # 🚀 Process kwargs to initialize data points from a CSV file
+        # Process kwargs to initialize data points from a CSV file
         if 'csv_file' in kwargs:
             csv_file = kwargs['csv_file']
             self.load_data_from_csv(csv_file)
 
-    def load_data_from_csv(self, csv_file: str):
-        data = pd.read_csv(csv_file)
-        # Assuming the CSV has columns 'alpha' and 'beta' for qubit state coefficients
-        alpha = data['alpha'].to_numpy()
-        beta = data['beta'].to_numpy()
-        self.state_vector = np.array([alpha[0], beta[0]], dtype=complex)
+    def load_data_from_csv(self, csv_file: str, idx: int = 0):
+        try:
+            data = pd.read_csv(csv_file)
+            # Assuming the CSV has columns 'alpha' and 'beta' for qubit state coefficients
+            alpha = data['alpha'].to_numpy(dtype=complex)
+            beta = data['beta'].to_numpy(dtype=complex)
+            self.state_vector = np.array([alpha[idx], beta[idx]], dtype=complex)
+        except Exception as e:
+            print(f"Error loading CSV file: {e}")
 
     def apply_hadamard(self):
         '''✨ Apply Hadamard gate to the qubit state.'''
@@ -48,7 +50,11 @@ class Ket:
 
 # Example usage:
 # 🌟 Create an instance of Ket and apply gates
-# ket_instance = Ket(label=1, csv_file='path_to_your_csv_file.csv')
-# ket_instance.apply_hadamard()
-# measurement_result = ket_instance.measure()
-# print(f"Measurement result: {measurement_result}")
+if __name__ == "__main__":
+    ket_instance = Ket(label=1, csv_file='quantum_neuron/utils/data/photon.csv')
+    measurement_result = ket_instance.measure()
+    print(f"Measurement result: {measurement_result}")
+    # After Gate
+    ket_instance.apply_hadamard()
+    measurement_result = ket_instance.measure()
+    print(f"Measurement result: {measurement_result}")
