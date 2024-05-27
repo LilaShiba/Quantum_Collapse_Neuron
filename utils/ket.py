@@ -1,6 +1,6 @@
-from typing import Dict, Any
 import numpy as np
 import pandas as pd
+from typing import Dict, Any
 
 class Ket:
     '''🔮 Quantum State Representation for One Qubit.'''
@@ -9,7 +9,7 @@ class Ket:
 
     def __init__(self, label: int = 0, **kwargs: Dict[str, Any]):
         self.label = label
-        self.state_vector = kwargs.get('state_vector', self.random_state_vector() ) # Initialize to a random state (alpha, beta) amplutudes 
+        self.state_vector = kwargs.get('state_vector', self.random_state_vector())  # Initialize to a random state (alpha, beta) amplitudes 
         self.t = kwargs.get('t', 1)  # Kelvin, default to 1 if not provided
         self.c = kwargs.get('c', 0)  # Dimensionless Scaler, default to 0 if not provided
         self.k = kwargs.get('k', 0)  # surface gravity, default to 0 if not provided
@@ -63,14 +63,3 @@ class Ket:
         '''📏 Measure the qubit state in the computational basis.'''
         probabilities = np.abs(self.state_vector) ** 2
         return np.random.choice([0, 1], p=probabilities)
-
-# Example usage:
-if __name__ == "__main__":
-    ket_instance = Ket(label=1, csv_file='quantum_neuron/utils/data/photon.csv')
-    measurement_result = ket_instance.measure()
-    print(f"Measurement result: {measurement_result}")
-    ket_instance.apply_hadamard()
-    measurement_result = ket_instance.measure()
-    print(f"Measurement result: {measurement_result}")
-    print(f"Thermal Energy Result: {ket_instance.thermal_energy}")
-    print(f"Surface Gravity Lower Bound: {ket_instance.tl}")

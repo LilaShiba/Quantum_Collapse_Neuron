@@ -1,6 +1,5 @@
 import numpy as np
 from typing import Dict, Any
-import matplotlib.pyplot as plt
 
 class Neuron():
     def __init__(self, **kwargs: Dict[str, Any]):
@@ -8,7 +7,7 @@ class Neuron():
         self.label: str = kwargs.get('label', '')
         self.x: float = kwargs.get('inputs', [0.0, 0.0])[0]
         self.y: float = kwargs.get('inputs', [0.0, 0.0])[1]
-        self.weights: np.array = kwargs.get('weights', np.random.rand(2, 3))
+        self.weights: np.array = kwargs.get('weights', np.random.rand(2, 3).astype(np.complex128))
         self.bias: float = kwargs.get('bias', np.random.random())
         self.learning_rate: float = kwargs.get('learning_rate', np.random.random())
         self.state: float = kwargs.get('state', np.random.random())
@@ -36,7 +35,6 @@ class Neuron():
         """
         if input_vector is None:
             input_vector = [self.x, self.state, 1]
-        # Calculate the signal using weights and input vector
         self.signal = np.tanh(np.dot(input_vector, self.weights.T)) + self.bias
         self.state, self.output = self.signal[0], self.signal[1]
         self.last_input = self.signal
@@ -71,21 +69,3 @@ class Neuron():
         noise = np.random.normal(0, noise_level, sine_wave.shape)
         noisy_sine_wave = sine_wave + noise
         return np.array([t, noisy_sine_wave])
-
-
-if __name__ == "__main__":
-    # Example usage:
-    print('begin test')
-    sine_wave = Neuron.generate_noisy_sin()
-    one_point = np.array([sine_wave[0][0], sine_wave[1][0]])
-    neuron = Neuron(inputs=one_point, layer=1)
-    
-    for x in range(len(sine_wave[0])):
-        neuron.x = sine_wave[0][x]
-        neuron.y = sine_wave[1][x]
-        neuron.iterate()
-        if x % 10 == 0:
-            print(f"iteration:{x} state:{neuron.state} output:{neuron.output}")
-            print('')
-
-    print(f'prediction: {neuron.output} res: {neuron.y}')
