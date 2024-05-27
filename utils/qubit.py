@@ -4,11 +4,19 @@ import pandas as pd
 
 class Ket:
     '''🔮 Quantum State Representation for One Qubit.'''
+    h = 6.626 * 10**-34  # Planck's constant
+    kb = 1.381 * 10**-23 # Boltzmann constant
 
     def __init__(self, label: int = 0, **kwargs: Dict[str, Any]):
         self.label = label
         self.state_vector = self.random_state_vector()  # Initialize to a random state
         # Process kwargs to initialize data points from a CSV file
+        self.t = kwargs.get('t', 0)  # Kelvin, default to 0 if not provided
+        self.kbt = self.kb * self.t
+        self.thermal_energy = self.kbt / self.h 
+        self.k = (1 / (2 * np.pi)) * (self.h / self.kbt) if self.kbt != 0 else 0  # Avoid division by zero 
+        # Surface Gravity
+
         if 'csv_file' in kwargs:
             csv_file = kwargs['csv_file']
             self.load_data_from_csv(csv_file)
@@ -79,3 +87,5 @@ if __name__ == "__main__":
     ket_instance.apply_hadamard()
     measurement_result = ket_instance.measure()
     print(f"Measurement result: {measurement_result}")
+
+    
