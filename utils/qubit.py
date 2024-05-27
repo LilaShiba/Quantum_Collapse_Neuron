@@ -4,18 +4,18 @@ import pandas as pd
 
 class Ket:
     '''🔮 Quantum State Representation for One Qubit.'''
-    h = 6.626 * 10**-34  # Planck's constant
-    kb = 1.381 * 10**-23 # Boltzmann constant
+    h = 6.626 * 10**-34  # Planck's constant in J·s
+    kb = 1.381 * 10**-23 # Boltzmann constant in J/K
 
     def __init__(self, label: int = 0, **kwargs: Dict[str, Any]):
         self.label = label
         self.state_vector = self.random_state_vector()  # Initialize to a random state
-        # Process kwargs to initialize data points from a CSV file
-        self.t = kwargs.get('t', 0)  # Kelvin, default to 0 if not provided
+        self.t = kwargs.get('t', 1)  # Kelvin, default to 1 if not provided
+        self.c = kwargs.get('c', 0)  # Custom parameter, default to 0 if not provided
+        self.k = kwargs.get('k', 0)  # surface gravity, default to 0 if not provided
         self.kbt = self.kb * self.t
-        self.thermal_energy = self.kbt / self.h 
-        self.k = (1 / (2 * np.pi)) * (self.h / self.kbt) if self.kbt != 0 else 0  # Avoid division by zero 
-        # Surface Gravity
+        self.thermal_energy = self.kbt / self.h
+        self.tl = (1 / (2 * np.pi)) * (self.h / self.kbt) if self.kbt != 0 else 0  # Avoid division by zero
 
         if 'csv_file' in kwargs:
             csv_file = kwargs['csv_file']
@@ -23,10 +23,8 @@ class Ket:
 
     def random_state_vector(self):
         '''Generate a random state vector |ψ⟩ = α|0⟩ + β|1⟩ with normalization.'''
-        # Generate random complex numbers for alpha and beta
         alpha = np.random.rand() + 1j * np.random.rand()
         beta = np.random.rand() + 1j * np.random.rand()
-        # Normalize the state vector
         norm = np.sqrt(np.abs(alpha)**2 + np.abs(beta)**2)
         alpha /= norm
         beta /= norm
@@ -35,7 +33,6 @@ class Ket:
     def load_data_from_csv(self, csv_file: str, idx: int = 0):
         try:
             data = pd.read_csv(csv_file)
-            # Assuming the CSV has columns 'alpha' and 'beta' for qubit state coefficients
             alpha = data['alpha'].to_numpy(dtype=complex)
             beta = data['beta'].to_numpy(dtype=complex)
             self.state_vector = np.array([alpha[idx], beta[idx]], dtype=complex)
@@ -67,25 +64,19 @@ class Ket:
         probabilities = np.abs(self.state_vector) ** 2
         return np.random.choice([0, 1], p=probabilities)
 
-
 # Example usage:
-# 🌟 Create an instance of Ket and apply gates
 if __name__ == "__main__":
-    # Init with Data
     ket_instance = Ket(label=1, csv_file='quantum_neuron/utils/data/photon.csv')
     measurement_result = ket_instance.measure()
     print(f"Measurement result: {measurement_result}")
-    # After Gate
     ket_instance.apply_hadamard()
     measurement_result = ket_instance.measure()
     print(f"Measurement result: {measurement_result}")
-    # Random Init
-    ket_kat_bar = Ket(label='2')
+    ket_kat_bar = Ket(label=2)
     measurement_result = ket_kat_bar.measure()
     print(f"Measurement result: {measurement_result}")
-    # After Gate
     ket_instance.apply_hadamard()
     measurement_result = ket_instance.measure()
     print(f"Measurement result: {measurement_result}")
-
-    
+    print(f"Thermal Energy Result: {ket_instance.thermal_energy}")
+    print(f"Custom Parameter Result: {ket_instance.k}")
