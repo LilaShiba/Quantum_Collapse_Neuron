@@ -11,7 +11,7 @@ class Ket:
         self.label = label
         self.state_vector = self.random_state_vector()  # Initialize to a random state
         self.t = kwargs.get('t', 1)  # Kelvin, default to 1 if not provided
-        self.c = kwargs.get('c', 0)  # Custom parameter, default to 0 if not provided
+        self.c = kwargs.get('c', 0)  # Dimensionless Scaler, default to 0 if not provided
         self.k = kwargs.get('k', 0)  # surface gravity, default to 0 if not provided
         self.kbt = self.kb * self.t
         self.thermal_energy = self.kbt / self.h
