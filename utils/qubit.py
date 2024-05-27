@@ -9,8 +9,9 @@ class Ket:
 
     def __init__(self, label: int = 0, **kwargs: Dict[str, Any]):
         self.label = label
-        self.state_vector = self.random_state_vector()  # Initialize to a random state
+        self.state_vector = kwargs.get('state_vector', self.random_state_vector() ) # Initialize to a random state (alpha, beta) amplutudes 
         self.t = kwargs.get('t', 1)  # Kelvin, default to 1 if not provided
+        
         self.c = kwargs.get('c', 0)  # Dimensionless Scaler, default to 0 if not provided
         self.k = kwargs.get('k', 0)  # surface gravity, default to 0 if not provided
         self.kbt = self.kb * self.t
@@ -72,11 +73,5 @@ if __name__ == "__main__":
     ket_instance.apply_hadamard()
     measurement_result = ket_instance.measure()
     print(f"Measurement result: {measurement_result}")
-    ket_kat_bar = Ket(label=2)
-    measurement_result = ket_kat_bar.measure()
-    print(f"Measurement result: {measurement_result}")
-    ket_instance.apply_hadamard()
-    measurement_result = ket_instance.measure()
-    print(f"Measurement result: {measurement_result}")
     print(f"Thermal Energy Result: {ket_instance.thermal_energy}")
-    print(f"Custom Parameter Result: {ket_instance.k}")
+    print(f"Surface Gravity Lower Bound: {ket_instance.tl}")
