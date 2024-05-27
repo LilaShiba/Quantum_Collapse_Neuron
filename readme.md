@@ -6,7 +6,7 @@
 ![Hamiltonian Graph with Super Clusters](imgs/hamiltonian.png)
 #### Hamiltonian Graph with Super Clusters
 
-The goal is to incorporate quantum holographic properties inside a simulated CNN
+The goal is to incorporate quantum holographic properties inside a simulated [CNN](https://arxiv.org/abs/2302.04584)
 
 <h2>What is a Qubit? 🧩</h2>
 
@@ -76,9 +76,11 @@ The goal is to incorporate quantum holographic properties inside a simulated CNN
     import numpy as np
     
     class Ket:
+
+        ...
         def __init__(self, alpha, beta):
             self.state_vector = np.array([alpha, beta], dtype=complex)
-    
+            ...
         def measure(self):
             probabilities = np.abs(self.state_vector) ** 2
             return np.random.choice([0, 1], p=probabilities)
@@ -93,7 +95,7 @@ The goal is to incorporate quantum holographic properties inside a simulated CNN
 
 ## Mimicking Superconductor Substrate as a Network Layer 🌌✨
 
-To achieve a simulated superconductor state as defined by the [local thermal equilibrium](https://phys.libretexts.org/Bookshelves/Astronomy__Cosmology/Supplemental_Modules_(Astronomy_and_Cosmology)/Cosmology/Astrophysics_(Richmond)/27%3A_(Local)_Thermodynamic_Equilibrium), we delve into simulating pressure & heat in particles and waves by applying to the qubit class 🌙🪄
+To achieve a simulated state for our qubit nerouns to structure around, first the [local thermal equilibrium](https://phys.libretexts.org/Bookshelves/Astronomy__Cosmology/Supplemental_Modules_(Astronomy_and_Cosmology)/Cosmology/Astrophysics_(Richmond)/27%3A_(Local)_Thermodynamic_Equilibrium), of our virtual material will be tested & expirmented on to find the best structure for qubit "layers" in a [CNN](https://arxiv.org/abs/2302.04584) 🌙🪄
 
-TBD: 5/25/2024 (Branch: LTE (local thermal equilbrium)
+TBD: 5/27/2024 (Branch: Membranes)
 
