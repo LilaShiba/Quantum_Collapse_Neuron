@@ -6,7 +6,7 @@
 ![Hamiltonian Graph with Super Clusters](imgs/hamiltonian.png)
 #### Hamiltonian Graph with Super Clusters
 
-The goal is to simulate quantum holographic properties inside a [CNN](https://arxiv.org/abs/2302.04584)
+The goal is to simulate quantum holographic properties inside a [complex neural network](https://github.com/LilaShiba/neural_collective_network)
 
 <h2>What is a Qubit? 🧩</h2>
 
@@ -17,8 +17,10 @@ The goal is to simulate quantum holographic properties inside a [CNN](https://ar
 <ul>
   <li>A classical bit can be either <code>0</code> or <code>1</code>.</li>
   <li>A qubit can be in a state |0⟩, |1⟩, or any superposition α|0⟩ + β|1⟩ where α and β are complex numbers, just like us humans.</li>
-  <li>Note: This is in <a href="https://en.wikipedia.org/wiki/Hilbert_space">Hilbert Space</a>.</li>
-  <li>Note: Layer class demands a Hamiltioan <a href='https://en.wikipedia.org/wiki/Hamiltonian_path'> Graph</a></li>
+  <li>α (alpha) is the amplitude for the state |0⟩.</li>
+  <li>β (beta) is the amplitude for the state |1⟩.</li>
+  <li>Note: This is in <a href="https://en.wikipedia.org/wiki/Hilbert_space">Hilbert Space<, but all are welcomed 💖/a>.</li>
+  <li>Note: Layer class demands a Hamiltioan <a href='https://en.wikipedia.org/wiki/Hamiltonian_path'> Graph as the lower level diameter aka graph connectivity </a></li>
   <li>Note: Ideally and for ease sake this is an <a href='https://en.wikipedia.org/wiki/Orthonormality'> Orthonormal relationship, which you can't find in Brooklyn </a></li>
 </ul>
 
