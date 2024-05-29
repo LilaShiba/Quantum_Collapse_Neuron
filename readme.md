@@ -10,7 +10,7 @@ The goal is to simulate quantum holographic properties inside a [CNN](https://ar
 
 <h2>What is a Qubit? 🧩</h2>
 
-<p>A qubit is the basic unit of quantum information, just like a bit in classical computing. However, qubits are magical because they can be in a superposition of states!</p>
+<p>A qubit is the basic unit of quantum information, just like a bit in classical computing. However, qubits are magical because they can be in a superposition of states! Kind of like gender 🧙‍♀️✨</p>
 
 <p>In simple terms:</p>
 
