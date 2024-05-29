@@ -95,5 +95,31 @@ The goal is to simulate quantum holographic properties using a [complex neural n
     print(f"Measurement result: {measurement_result}")
 </code></pre>
 
+## Scales and Such
+
+<p>f is  frequency (cycles per second), and  &omega; is angular frequency (radians per second). The factor of 2&pi; comes from the fact that one complete cycle of oscillation corresponds to 2&pi; radians.</p>
+
+
+<p>When discussing energy, it's important to understand the distinction between <strong>Joules per second</strong> and <strong>Joules per Kelvin</strong>.</p>
+
+<h3>Joules per Second (J/s)</h3>
+<p>
+  The term <strong>Joules per second</strong> refers to the rate of energy transfer or power. It is a measure of how much energy is being transferred or converted per second. The unit for this measurement is called a Watt (W), where:
+</p>
+<ul>
+  <li>1 Watt (W) = 1 Joule per second (J/s)</li>
+</ul>
+
+<h3>Joules per Kelvin (J/K)</h3>
+<p>
+  The term <strong>Joules per Kelvin</strong> is used to describe a change in energy per change in temperature, specifically in the context of thermodynamics and heat capacity. It represents the amount of energy required to change the temperature of a system by one Kelvin (K). The unit is often used in the following contexts:
+</p>
+<ul>
+  <li><strong>Heat Capacity (C):</strong> This is the amount of heat needed to change the temperature of a substance by one Kelvin. For example, if a substance has a heat capacity of 100 J/K, it means that 100 Joules of energy are needed to increase its temperature by 1 Kelvin.</li>
+ 
+</ul>
+
+
+
 
 
