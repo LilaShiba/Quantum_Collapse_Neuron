@@ -6,7 +6,7 @@
 ![Hamiltonian Graph with Super Clusters](imgs/hamiltonian.png)
 #### Hamiltonian Graph with Super Clusters
 
-The goal is to simulate quantum holographic properties inside a [complex neural network](https://github.com/LilaShiba/neural_collective_network)
+The goal is to simulate quantum holographic properties using a [complex neural network](https://github.com/LilaShiba/neural_collective_network)
 
 <h2>What is a Qubit? 🧩</h2>
 
