@@ -6,7 +6,7 @@
 ![Hamiltonian Graph with Super Clusters](imgs/hamiltonian.png)
 #### Hamiltonian Graph with Super Clusters
 
-The goal is to incorporate quantum holographic properties inside a simulated [CNN](https://arxiv.org/abs/2302.04584)
+The goal is to simulate quantum holographic properties inside a [CNN](https://arxiv.org/abs/2302.04584)
 
 <h2>What is a Qubit? 🧩</h2>
 
