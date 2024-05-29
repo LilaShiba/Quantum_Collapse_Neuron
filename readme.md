@@ -6,20 +6,22 @@
 ![Hamiltonian Graph with Super Clusters](imgs/hamiltonian.png)
 #### Hamiltonian Graph with Super Clusters
 
-The goal is to incorporate quantum holographic properties inside a simulated [CNN](https://arxiv.org/abs/2302.04584)
+The goal is to simulate quantum holographic properties using a [complex neural network](https://github.com/LilaShiba/neural_collective_network)
 
 <h2>What is a Qubit? 🧩</h2>
 
-<p>A qubit is the basic unit of quantum information, just like a bit in classical computing. However, qubits are magical because they can be in a superposition of states!</p>
+<p>A qubit is the basic unit of quantum information, just like a bit in classical computing. However, qubits are magical because they can be in a superposition of states! Kind of like gender 🧙‍♀️✨</p>
 
 <p>In simple terms:</p>
 
 <ul>
   <li>A classical bit can be either <code>0</code> or <code>1</code>.</li>
-  <li>A qubit can be in a state |0⟩, |1⟩, or any superposition α|0⟩ + β|1⟩ where α and β are complex numbers.</li>
-  <li>Note: This is in <a href="https://en.wikipedia.org/wiki/Hilbert_space">Hilbert Space</a>.</li>
-  <li>Note: Layer class demands a Hamiltioan <a href='https://en.wikipedia.org/wiki/Hamiltonian_path'> Graph</a></li>
-  <li>Note: Ideally and for ease sake this is an <a href='https://en.wikipedia.org/wiki/Orthonormality'> Orthonormal relationship </a></li>
+  <li>A qubit can be in a state |0⟩, |1⟩, or any superposition α|0⟩ + β|1⟩ where α and β are complex numbers, just like us humans.</li>
+  <li>α (alpha) is the amplitude for the state |0⟩.</li>
+  <li>β (beta) is the amplitude for the state |1⟩.</li>
+  <li>Note: This is in <a href="https://en.wikipedia.org/wiki/Hilbert_space">Hilbert Space💖</a></li>
+  <li>Note: Layer class demands a Hamiltioan <a href='https://en.wikipedia.org/wiki/Hamiltonian_path'> Graph as the lower level diameter aka graph connectivity </a></li>
+  <li>Note: Ideally and for ease sake this is an <a href='https://en.wikipedia.org/wiki/Orthonormality'> Orthonormal relationship, which you can't find in Brooklyn </a></li>
 </ul>
 
 <p>Source: 1.) <a href="https://mitpressbookstore.mit.edu/book/9780262526678">MIT: A Gentle Introduction to Quantum Computing</a></p>
@@ -93,9 +95,5 @@ The goal is to incorporate quantum holographic properties inside a simulated [CN
     print(f"Measurement result: {measurement_result}")
 </code></pre>
 
-## Mimicking Superconductor Substrate as a Network Layer 🌌✨
 
-To achieve a simulated state for our qubit nerouns to structure around, first the [local thermal equilibrium](https://phys.libretexts.org/Bookshelves/Astronomy__Cosmology/Supplemental_Modules_(Astronomy_and_Cosmology)/Cosmology/Astrophysics_(Richmond)/27%3A_(Local)_Thermodynamic_Equilibrium), of our virtual material will be tested & expirmented on to find the best structure for qubit "layers" in a [CNN](https://arxiv.org/abs/2302.04584) 🌙🪄
-
-TBD: 5/27/2024 (Branch: Membranes)
 
