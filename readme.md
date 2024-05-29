@@ -97,7 +97,7 @@ The goal is to simulate quantum holographic properties inside a [complex neural 
 
 ## Mimicking Superconductor Substrate as a Network Layer 🌌✨
 
-To achieve a simulated state for our qubit nerouns to structure around, first the [local thermal equilibrium](https://phys.libretexts.org/Bookshelves/Astronomy__Cosmology/Supplemental_Modules_(Astronomy_and_Cosmology)/Cosmology/Astrophysics_(Richmond)/27%3A_(Local)_Thermodynamic_Equilibrium), of our virtual material will be tested & expirmented on to find the best structure for qubit "layers" in a [CNN](https://arxiv.org/abs/2302.04584) 🌙🪄
+To achieve a simulated state for our qubit nerouns to structure around, first the [local thermal equilibrium](https://phys.libretexts.org/Bookshelves/Astronomy__Cosmology/Supplemental_Modules_(Astronomy_and_Cosmology)/Cosmology/Astrophysics_(Richmond)/27%3A_(Local)_Thermodynamic_Equilibrium), of our virtual material will be tested & expirmented on to find the best structure for qubit "layers"  🌙🪄
 
 TBD: 5/27/2024 (Branch: Membranes)
 
