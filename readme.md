@@ -3,6 +3,8 @@
 # 🧙‍♀️✨ Qubits Neuron Class 🚀🌌
 
 
+![photon](imgs/IMG_5172.jpeg)
+
 ![Hamiltonian Graph with Super Clusters](imgs/hamiltonian.png)
 #### Hamiltonian Graph with Super Clusters
 
