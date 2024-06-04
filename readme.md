@@ -6,22 +6,20 @@ Quantum Qubit Example
 
 This example demonstrates how to visualize a single qubit on the Bloch sphere using the <code>BlochSphere</code> and <code>Qubit</code> classes in Python.
 
-<body>
-<div class="container">
 
 # Create a qubit with equal superposition state
 
-qubit = Qubit(a=1/np.sqrt(2), b=1/np.sqrt(2))
-
+<code><pre> qubit = Qubit(a=1/np.sqrt(2), b=1/np.sqrt(2)) </code></pre>
 # Plot the qubit on the Bloch sphere
 
-qubit.plot_qubit()</code></pre>
+<code><pre> qubit.plot_qubit() </code></pre>
 
   This code initializes a qubit in an equal superposition state and visualizes it on the Bloch sphere.
-</div>
 
 <img src="imgs/IMG_5172.jpeg" alt="photon">
 <img src="imgs/hamiltonian.png" alt="Hamiltonian Graph with Super Clusters">
+
+
 #### Hamiltonian Graph with Super Clusters
 
 The goal is to simulate quantum holographic properties using a <a href="https://github.com/LilaShiba/neural_collective_network">complex neural network</a>.
