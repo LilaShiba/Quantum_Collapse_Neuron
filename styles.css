@@ -1,15 +1,30 @@
 body {
     background-color: black;
     color: white;
-    
-    .container { width: 80%; margin: auto; background-color: #fff; padding: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        
-     } 
+
+    .container {
+        width: 80%;
+        margin: auto;
+        background-color: grey;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    }
 }
 
-code { background-color: #f9f9f9; padding: 5px; border-radius: 3px; 
-    
+code {
+    background-color: #f9f9f9;
+    padding: 5px;
+    border-radius: 3px;
+
 }
-h1, h2, h3, h4, h5, h6 {
-    color: white; /* Ensure headings are white */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: white;
+    /* Ensure headings are white */
 }
