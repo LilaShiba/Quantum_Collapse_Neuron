@@ -8,7 +8,7 @@
         <p>This example demonstrates how to visualize a single qubit on the Bloch sphere using the <code>BlochSphere</code> and <code>Qubit</code> classes in Python.</p>
         
         <h2>Example Code</h2>
-        <pre><code>from qubit import Qubit
+        <pre><code>from qubit import Qubit</pre></code>
 
 # Create a qubit with equal superposition state
 qubit = Qubit(a=1/np.sqrt(2), b=1/np.sqrt(2))
