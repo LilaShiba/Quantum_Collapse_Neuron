@@ -2,29 +2,6 @@
 
 # 🧙‍♀️✨ Qubits Neuron Class 🚀🌌
 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Quantum Qubit Example</title>
-    <style>
-        body {
-        .container {
-            width: 80%;
-            margin: auto;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-         }
-        }
-        code {
-            background-color: #f9f9f9;
-            padding: 5px;
-            border-radius: 3px;
-        }
-    </style>
-</head>
 <body>
     <div class="container">
         <h1>Quantum Qubit Example</h1>
