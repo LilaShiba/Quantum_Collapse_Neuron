@@ -15,6 +15,7 @@ class Ket:
         self.k = kwargs.get('k', 0)  # surface gravity, default to 0 if not provided
         self.kbt = self.kb * self.t
         self.thermal_energy = self.kbt / self.h
+        # replacing c with hamiltoian ratio vibes
         self.tl = (1 / (2 * np.pi)) * (self.h / self.kbt) if self.kbt != 0 else 0  # Avoid division by zero
 
         if 'csv_file' in kwargs:

@@ -4,11 +4,12 @@ from typing import Dict, Any
 class Neuron():
     '''
     State -> of a single quantum system: qubit
-    Weights -> Amplutuides of Alpha and Beta
+    Weights -> Idx, Amplutuides, & Phase of Alpha and Beta
     '''
     def __init__(self, **kwargs: Dict[str, Any]):
         self.layer: int = kwargs.get('layer', 0)
         self.label: str = kwargs.get('label', '')
+        # AMP, PHASE
         self.alpha: float = kwargs.get('inputs', [0.0, 0.0])
         self.beta: float = kwargs.get('inputs', [0.0, 0.0])
         self.qubit: np.array = kwargs.get('weights', np.random.rand(2, 3).astype(np.complex128))
