@@ -9,10 +9,10 @@ This example demonstrates how to visualize a single qubit on the Bloch sphere us
 
 # Create a qubit with equal superposition state
 
-<code><pre> qubit = Qubit(a=1/np.sqrt(2), b=1/np.sqrt(2)) </code>
+<pre><code> qubit = Qubit(a=1/np.sqrt(2), b=1/np.sqrt(2)) </code></pre>
 # Plot the qubit on the Bloch sphere
 
-<code><pre> qubit.plot_qubit() </code>
+<pre><code> qubit.plot_qubit() </code></pre>
 
   This code initializes a qubit in an equal superposition state and visualizes it on the Bloch sphere.
 
