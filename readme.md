@@ -117,4 +117,4 @@ The term <strong>Joules per Kelvin</strong> is used to describe a change in ener
 <ul>
     <li><strong>Heat Capacity (C):</strong> This is the amount of heat needed to change the temperature of a substance by one Kelvin. For example, if a substance has a heat capacity of 100 J/K, it means that 100 Joules of energy are needed to increase its temperature by 1 Kelvin.</li>
 </ul>
-</body>
+
