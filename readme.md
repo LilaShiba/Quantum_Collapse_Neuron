@@ -2,6 +2,9 @@
 
 # 🧙‍♀️✨ Qubits Neuron Class 🚀🌌
 
+
+<img src="https://raw.githubusercontent.com/LilaShiba/Quantum_Collapse_Neuron/main/imgs/IMG_5369.jpeg">
+
  Qubit Example
 
 This example demonstrates how to visualize a single qubit on the Bloch sphere using the <code>BlochSphere</code> and <code>Qubit</code> classes in Python.
