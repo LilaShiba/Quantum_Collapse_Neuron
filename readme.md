@@ -33,7 +33,7 @@ The goal is to simulate quantum holographic properties using a <a href="https://
 ## Full Process 
 
 
-<img src='https://raw.githubusercontent.com/LilaShiba/Quantum_Collapse_Neuron/main/imgs/IMG_5375.heic'>
+<img src='https://raw.githubusercontent.com/LilaShiba/Quantum_Collapse_Neuron/main/imgs/full_neuron_process.png'>
 
 
 ## What is a Qubit? 🧩
