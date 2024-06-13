@@ -5,7 +5,7 @@
 
 <img src="https://raw.githubusercontent.com/LilaShiba/Quantum_Collapse_Neuron/main/imgs/IMG_5369.jpeg">
 
- Qubit Example
+### Qubit Example
 
 This example demonstrates how to visualize a single qubit on the Bloch sphere using the <code>BlochSphere</code> and <code>Qubit</code> classes in Python.
 
@@ -20,7 +20,8 @@ This example demonstrates how to visualize a single qubit on the Bloch sphere us
 
   This code initializes a qubit in an equal superposition state and visualizes it on the Bloch sphere.
 
-<img src="imgs/IMG_5172.jpeg" alt="photon">
+### Goal State:
+
 <img src="imgs/hamiltonian.png" alt="Hamiltonian Graph with Super Clusters">
 
 
