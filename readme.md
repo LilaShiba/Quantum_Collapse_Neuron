@@ -28,6 +28,13 @@ This example demonstrates how to visualize a single qubit on the Bloch sphere us
 
 The goal is to simulate quantum holographic properties using a <a href="https://github.com/LilaShiba/neural_collective_network">complex neural network</a>.
 
+
+## Full Process 
+
+
+<img src='https://raw.githubusercontent.com/LilaShiba/Quantum_Collapse_Neuron/main/imgs/IMG_5375.heic'>
+
+
 ## What is a Qubit? 🧩
 
 A qubit is the basic unit of quantum information, just like a bit in classical computing. However, qubits are magical because they can be in a superposition of states! Kind of like gender 🧙‍♀️✨
