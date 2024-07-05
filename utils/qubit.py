@@ -1,6 +1,7 @@
 import numpy as np
 from typing import Dict
 from bloch_sphere import BlochSphere
+import matplotlib.pyplot as plt
 
 class Qubit(BlochSphere):
     """
