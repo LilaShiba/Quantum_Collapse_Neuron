@@ -9,13 +9,14 @@ class Neuron():
     def __init__(self, **kwargs: Dict[str, Any]):
         self.layer: int = kwargs.get('layer', 0)
         self.label: str = kwargs.get('label', '')
-        # AMP, PHASE
-        self.alpha: float = kwargs.get('inputs', [0.0, 0.0])
-        self.beta: float = kwargs.get('inputs', [0.0, 0.0])
+        # Treating I/O as AMP & PHASE 
+        self.alpha: float = kwargs.get('inputs_alpha', [0.0, 0.0])
+        self.beta: float = kwargs.get('inputs_beta', [0.0, 0.0])
+        # Actual alpha & beta probabilites 
         self.qubit: np.array = kwargs.get('weights', np.random.rand(2, 3).astype(np.complex128))
         self.bias: float = kwargs.get('bias', np.random.random())
         self.learning_rate: float = kwargs.get('learning_rate', np.random.random())
-        # Value
+        # Value (think dot product or collapsed state to 1D)
         self.state: float = kwargs.get('state', np.random.random())
         self.output: float = kwargs.get('output', np.random.random())
         self.loss_gradient: np.array = kwargs.get('loss_gradient', None)
