@@ -2,7 +2,6 @@
 
 # 🧙‍♀️✨ Qubits Neuron Class 🚀🌌
 
-
 <img src="https://raw.githubusercontent.com/LilaShiba/Quantum_Collapse_Neuron/main/imgs/IMG_5369.jpeg">
 
 ### Qubit Example
@@ -11,30 +10,29 @@ This example demonstrates how to visualize a single qubit on the Bloch sphere us
 
 <img src="https://raw.githubusercontent.com/LilaShiba/Quantum_Collapse_Neuron/main/imgs/image.jpg">
 
+<img src="imgs/qubit_ex.png">
+
 # Create a qubit with equal superposition state
 
 <pre><code> qubit = Qubit(a=1/np.sqrt(2), b=1/np.sqrt(2)) </code></pre>
+
 # Plot the qubit on the Bloch sphere
 
 <pre><code> qubit.plot_qubit() </code></pre>
 
   This code initializes a qubit in an equal superposition state and visualizes it on the Bloch sphere.
 
-### Goal State:
+### Goal State
 
 <img src="imgs/hamiltonian.png" alt="Hamiltonian Graph with Super Clusters">
-
 
 #### Hamiltonian Graph with Super Clusters
 
 The goal is to simulate quantum holographic properties using a <a href="https://github.com/LilaShiba/neural_collective_network">complex neural network</a>.
 
-
-## Full Process 
-
+## Full Process
 
 <img src='https://raw.githubusercontent.com/LilaShiba/Quantum_Collapse_Neuron/main/imgs/full_neuron_process.png'>
-
 
 ## What is a Qubit? 🧩
 
@@ -129,4 +127,3 @@ The term <strong>Joules per Kelvin</strong> is used to describe a change in ener
 <ul>
     <li><strong>Heat Capacity (C):</strong> This is the amount of heat needed to change the temperature of a substance by one Kelvin. For example, if a substance has a heat capacity of 100 J/K, it means that 100 Joules of energy are needed to increase its temperature by 1 Kelvin.</li>
 </ul>
-
