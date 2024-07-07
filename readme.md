@@ -9,7 +9,7 @@ This bespoke Python class has two aims:
 1. Code that models qubits
 2. A course that prepares computer scientists for qubits
 
-A nice starting place is in the notations used in [common formulas](notes/formulas.md). Later in this document, Dirac Notation, sometimes called Bra-ket Notation (|0⟩, |1⟩), will be introduced. It will be helpful to have worked with linear algebra, probability, and a bit of calculus.
+A nice starting place is in the notations used in [common formulas](/formulas.md). Later in this document, Dirac Notation, sometimes called Bra-ket Notation (|0⟩, |1⟩), will be introduced. It will be helpful to have worked with linear algebra, probability, and a bit of calculus.
 
 <img src="https://raw.githubusercontent.com/LilaShiba/Quantum_Collapse_Neuron/main/imgs/IMG_5369.jpeg">
 
