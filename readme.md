@@ -1,11 +1,13 @@
 <link rel="stylesheet" type="text/css" href="styles.css">
-
+<script type="text/javascript" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 # 🧙‍♀️✨ Qubits Neuron Class 🚀🌌
 
-This bespoke Python Class has two aims:
+This bespoke Python class has two aims:
 
-1. Code that models Qubits
-2. Course that gets computer scientist ready for Qubits
+1. Code that models qubits
+2. A course that prepares computer scientists for qubits
 
 A nice starting place is in the notations used in [common formulas](notes/formulas.md). Later in this document, Dirac Notation, sometimes called Bra-ket Notation (|0⟩, |1⟩), will be introduced. It will be helpful to have worked with linear algebra, probability, and a bit of calculus.
 
