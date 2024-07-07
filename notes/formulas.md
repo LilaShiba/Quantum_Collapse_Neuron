@@ -70,19 +70,19 @@ $$\Delta x \Delta p \geq \frac{\hbar}{2}$$
 
 ## 📚 Legend
 
-- $ h $: Planck's constant
-- $ \hbar $: Reduced Planck's constant
-- $ \lambda $: Wavelength
-- $ p $: Momentum
-- $ \psi $: Wave function
-- $ \nabla^2 $: Laplacian operator
-- $ V $: Potential energy
-- $ m $: Mass
-- $ \hat{H} $: Hamiltonian operator
-- $ \hat{p} $: Momentum operator
-- $ \hat{x} $: Position operator
-- $ [\hat{x}, \hat{p}] $: Commutator of position and momentum operators
-- $ \Delta x $: Uncertainty in position
-- $ \Delta p $: Uncertainty in momentum
-- $ |\psi(x)|^2 $: Probability density
-- $ \int $: Integral symbol
+- $h$: Planck's constant
+- $\hbar$: Reduced Planck's constant
+- $\lambda$: Wavelength
+- $p$: Momentum
+- $\psi$: Wave function
+- $\nabla^2$: Laplacian operator
+- $V$: Potential energy
+- $m$: Mass
+- $\hat{H}$: Hamiltonian operator
+- $\hat{p}$: Momentum operator
+- $\hat{x}$: Position operator
+- $[\hat{x}, \hat{p}]$: Commutator of position and momentum operators
+- $\Delta x$: Uncertainty in position
+- $\Delta p$: Uncertainty in momentum
+- $|\psi(x)|^2$: Probability density
+- $\int$: Integral symbol
