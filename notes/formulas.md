@@ -2,10 +2,11 @@
 
 ## 🔮 Fundamental Constants
 
-- **Planck's Constant ($h$)**: $ h \approx 6.62607015 \times 10^{-34} \ \text{J} \cdot \text{s} $
+- **Planck's Constant**: $$\ h \approx 6.62607015 \times 10^{-34} \ \text{J} \cdot \text{s} $$
   - *Planck's constant is a fundamental physical constant that relates the energy of a photon to its frequency. It is a cornerstone in quantum mechanics, highlighting the quantized nature of energy.*
 
 - **Reduced Planck's Constant ($\hbar$)**: $ \hbar = \frac{h}{2\pi} \approx 1.0545718 \times 10^{-34} \ \text{J} \cdot \text{s} $
+
   - *Reduced Planck's constant, often called "h-bar," is used in many quantum mechanics equations. It simplifies the expression of quantum phenomena, especially angular momentum and the Heisenberg uncertainty principle.*
 
 ## ✨ Wave-Particle Duality
