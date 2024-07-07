@@ -2,11 +2,10 @@
 
 ## 🔮 Fundamental Constants
 
-- **Planck's Constant**: $$\ h \approx 6.62607015 \times 10^{-34} \ \text{J} \cdot \text{s} $$
+- **Planck's Constant ($h$)**: $h \approx 6.62607015 \times 10^{-34} \ \text{J} \cdot \text{s}$
   - *Planck's constant is a fundamental physical constant that relates the energy of a photon to its frequency. It is a cornerstone in quantum mechanics, highlighting the quantized nature of energy.*
 
-- **Reduced Planck's Constant ($\hbar$)**: $ \hbar = \frac{h}{2\pi} \approx 1.0545718 \times 10^{-34} \ \text{J} \cdot \text{s} $
-
+- **Reduced Planck's Constant ($\hbar$)**: $\hbar = \frac{h}{2\pi} \approx 1.0545718 \times 10^{-34} \ \text{J} \cdot \text{s}$
   - *Reduced Planck's constant, often called "h-bar," is used in many quantum mechanics equations. It simplifies the expression of quantum phenomena, especially angular momentum and the Heisenberg uncertainty principle.*
 
 ## ✨ Wave-Particle Duality
@@ -22,15 +21,15 @@
 
 - **Schrödinger Equation (Time-Dependent)**:
   $$i \hbar \frac{\partial \psi(\mathbf{r}, t)}{\partial t} = \left( -\frac{\hbar^2}{2m} \nabla^2 + V(\mathbf{r}, t) \right) \psi(\mathbf{r}, t)$$
-  - $ \psi(\mathbf{r}, t) $ = wave function
-  - $ \nabla^2 $ = Laplacian operator
-  - $ V(\mathbf{r}, t) $ = potential energy
-  - $ m $ = mass
+  - $\psi(\mathbf{r}, t)$ = wave function
+  - $\nabla^2$ = Laplacian operator
+  - $V(\mathbf{r}, t)$ = potential energy
+  - $m$ = mass
   - *The time-dependent Schrödinger equation describes how the quantum state of a physical system changes with time. It is the key equation of non-relativistic quantum mechanics.*
 
 - **Schrödinger Equation (Time-Independent)**:
   $$\left( -\frac{\hbar^2}{2m} \frac{d^2}{dx^2} + V(x) \right) \psi(x) = E \psi(x)$$
-  - $ E $ = energy eigenvalue
+  - $E$ = energy eigenvalue
   - *The time-independent Schrödinger equation is used to find the stationary states of a quantum system. These are states with a definite energy, which do not change over time.*
 
 ## 🧩 Operators and Observables

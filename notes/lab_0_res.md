@@ -11,6 +11,7 @@
    - Planck's constant: $h \approx 6.62607015 \times 10^{-34} \ \text{J} \cdot \text{s}$
 
    Calculation:
+
    \[
    E = h\nu = (6.62607015 \times 10^{-34} \ \text{J} \cdot \text{s}) \times (5 \times 10^{14} \ \text{Hz}) = 3.313035075 \times 10^{-19} \ \text{J}
    \]
@@ -22,6 +23,7 @@
 1. **Theory**: The reduced Planck's constant ($\hbar$) is often more convenient to use in quantum mechanics because it simplifies equations involving angular momentum and wave functions. It is defined as $\hbar = \frac{h}{2\pi}$. Many quantum mechanical equations, such as the Schrödinger equation and commutation relations, are more succinct when expressed using $\hbar$.
 
 2. **Practical**:
+
    \[
    \hbar = \frac{h}{2\pi} = \frac{6.62607015 \times 10^{-34} \ \text{J} \cdot \text{s}}{2\pi} \approx 1.0545718 \times 10^{-34} \ \text{J} \cdot \text{s}
    \]
@@ -37,6 +39,7 @@
    - Planck's constant: $h \approx 6.62607015 \times 10^{-34} \ \text{J} \cdot \text{s}$
 
    Calculation:
+
    \[
    p = mv = (9.11 \times 10^{-31} \ \text{kg}) \times (2 \times 10^6 \ \text{m/s}) = 1.822 \times 10^{-24} \ \text{kg} \cdot \text{m/s}
    \]
@@ -57,7 +60,7 @@
    This equation ensures that the wave function $\psi(\mathbf{r}, t)$ evolves in a manner consistent with the principles of quantum mechanics.
 
 2. **Practical**:
-   Given the initial wave function $ \psi(x, 0) = Ae^{-(x/a)^2} $, solve the time-dependent Schrödinger equation for a free particle.
+   Given the initial wave function $\psi(x, 0) = Ae^{-(x/a)^2}$, solve the time-dependent Schrödinger equation for a free particle.
 
    For a free particle, the potential $V = 0$, so the equation simplifies to:
    \[
@@ -149,7 +152,7 @@
 
 ### Exercise 9: Position and Momentum
 
-1. **Theory**: The commutation relation $[x̂, p̂] = i ħ$ expresses the fundamental quantum mechanical principle that position and momentum cannot be simultaneously measured with arbitrary precision. This underlies the Heisenberg uncertainty principle.
+1. **Theory**: The commutation relation $[\hat{x}, \hat{p}] = i \hbar$ expresses the fundamental quantum mechanical principle that position and momentum cannot be simultaneously measured with arbitrary precision. This underlies the Heisenberg uncertainty principle.
 
 2. **Practical**:
    Verify the commutation relation by applying the operators $\hat{x}$ and $\hat{p}$ to a wave function $\psi(x)$:
@@ -188,7 +191,7 @@
 
 ### Exercise 11: Probability Density Function
 
-1. **Theory**: The probability density function $P(x) = |ψ(x)|²$ represents the probability of finding a particle at a specific position $x$ in space. It is derived from the wave function and provides a probabilistic interpretation of the particle's location.
+1. **Theory**: The probability density function $P(x) = |\psi(x)|^2$ represents the probability of finding a particle at a specific position $x$ in space. It is derived from the wave function and provides a probabilistic interpretation of the particle's location.
 
 2. **Practical**:
    For a particle in a one-dimensional box of length $L$, the ground state wave function is:
@@ -237,8 +240,8 @@
 - $ \hat{H} $: Hamiltonian operator
 - $ \hat{p} $: Momentum operator
 - $ \hat{x} $: Position operator
-- $ [x̂, p̂] $: Commutator of position and momentum operators
-- $ Δx $: Uncertainty in position
-- $ Δp $: Uncertainty in momentum
-- $ |ψ(x)|² $: Probability density
-- $ ∫ $: Integral symbol
+- $ [\hat{x}, \hat{p}] $: Commutator of position and momentum operators
+- $ \Delta x $: Uncertainty in position
+- $ \Delta p $: Uncertainty in momentum
+- $ |\psi(x)|^2 $: Probability density
+- $ \int $: Integral symbol
