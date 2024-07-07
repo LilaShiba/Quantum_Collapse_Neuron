@@ -2,6 +2,13 @@
 
 # 🧙‍♀️✨ Qubits Neuron Class 🚀🌌
 
+This bespoke Python Class has two aims:
+
+1. Code that models Qubits
+2. Course that gets computer scientist ready for Qubits
+
+A nice starting place is in the notations used in [common formulas](notes/formulas.md). Later in this document, Dirac Notation, sometimes called Bra-ket Notation (|0⟩, |1⟩), will be introduced. It will be helpful to have worked with linear algebra, probability, and a bit of calculus.
+
 <img src="https://raw.githubusercontent.com/LilaShiba/Quantum_Collapse_Neuron/main/imgs/IMG_5369.jpeg">
 
 ### Qubit Example
@@ -107,23 +114,3 @@ ket_instance = Ket(alpha, beta)
 measurement_result = ket_instance.measure()
 print(f"Measurement result: {measurement_result}")
 </code></pre>
-
-## Scales and Such
-
-f is frequency (cycles per second), and &omega; is angular frequency (radians per second). The factor of 2&pi; comes from the fact that one complete cycle of oscillation corresponds to 2&pi; radians.
-
-When discussing energy, it's important to understand the distinction between <strong>Joules per second</strong> and <strong>Joules per Kelvin</strong>.
-
-### Joules per Second (J/s)
-
-The term <strong>Joules per second</strong> refers to the rate of energy transfer or power. It is a measure of how much energy is being transferred or converted per second. The unit for this measurement is called a Watt (W), where:
-<ul>
-    <li>1 Watt (W) = 1 Joule per second (J/s)</li>
-</ul>
-
-### Joules per Kelvin (J/K)
-
-The term <strong>Joules per Kelvin</strong> is used to describe a change in energy per change in temperature, specifically in the context of thermodynamics and heat capacity. It represents the amount of energy required to change the temperature of a system by one Kelvin (K). The unit is often used in the following contexts:
-<ul>
-    <li><strong>Heat Capacity (C):</strong> This is the amount of heat needed to change the temperature of a substance by one Kelvin. For example, if a substance has a heat capacity of 100 J/K, it means that 100 Joules of energy are needed to increase its temperature by 1 Kelvin.</li>
-</ul>
