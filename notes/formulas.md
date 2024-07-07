@@ -1,0 +1,18 @@
+## 📚 Legend
+
+- [\( h \): Planck's constant](https://sciencedemonstrations.fas.harvard.edu/presentations/plancks-constant-determination)
+- [\( \hbar \): Reduced Planck's constant](https://ocw.mit.edu/courses/physics/8-04-quantum-physics-i-fall-2013/pages/lecture-notes/)
+- [\( \lambda \): Wavelength](http://hyperphysics.phy-astr.gsu.edu/hbase/quantum/debrog.html)
+- [\( p \): Momentum](http://hyperphysics.phy-astr.gsu.edu/hbase/mom.html)
+- [\( \psi \): Wave function](https://ocw.mit.edu/courses/physics/8-04-quantum-physics-i-fall-2013/pages/lecture-notes/)
+- [\( \nabla^2 \): Laplacian operator](https://ocw.mit.edu/courses/physics/8-04-quantum-physics-i-fall-2013/pages/lecture-notes/)
+- [\( V \): Potential energy](https://ocw.mit.edu/courses/physics/8-04-quantum-physics-i-fall-2013/pages/lecture-notes/)
+- [\( m \): Mass](http://hyperphysics.phy-astr.gsu.edu/hbase/mass.html)
+- [\( \hat{H} \): Hamiltonian operator](https://ocw.mit.edu/courses/physics/8-04-quantum-physics-i-fall-2013/pages/lecture-notes/)
+- [\( \hat{p} \): Momentum operator](https://quantum.stanford.edu/courses/quantum-mechanics/quantum-operators)
+- [\( \hat{x} \): Position operator](https://quantum.stanford.edu/courses/quantum-mechanics/quantum-operators)
+- [\( [\hat{x}, \hat{p}] \): Commutator of position and momentum operators](https://quantum.stanford.edu/courses/quantum-mechanics/commutation-relations)
+- [\( \Delta x \): Uncertainty in position](https://ocw.mit.edu/courses/physics/8-04-quantum-physics-i-fall-2013/pages/lecture-notes/)
+- [\( \Delta p \): Uncertainty in momentum](https://ocw.mit.edu/courses/physics/8-04-quantum-physics-i-fall-2013/pages/lecture-notes/)
+- [\( |\psi(x)|^2 \): Probability density](http://hyperphysics.phy-astr.gsu.edu/hbase/quantum/qmprob.html)
+- [\( \int \): Integral symbol](http://hyperphysics.phy-astr.gsu.edu/hbase/integ.html)
