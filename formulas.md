@@ -1,6 +1,3 @@
-<link rel="stylesheet" type="text/css" href="styles.css">
-
-
 # 🧙 Quantum Mechanics Study Sheet 🧙
 
 ## 🔮 Fundamental Constants
