@@ -48,9 +48,10 @@ class Cell():
         Calculates direction from 1x3 vector pos
         '''
         x, y, z = self.pos
+        r = np.sqrt(x**2 + y**2 + z**2)
         
-        psi = np.arctan2(y, x)  # azimuth
-        theta = np.arccos(z / np.sqrt(x**2 + y**2 + z**2))  # polar angle
+        psi = np.arctan2(y, x)  # azimuth angle
+        theta = np.arccos(z / r)  # polar angle
         return psi, theta
 
     def _entangle_probs(self, alpha: List[float], beta: List[float]) -> np.ndarray:
@@ -86,6 +87,8 @@ class Cell():
         z = np.cos(self.theta)
         return x, y, z
     
+
+
 
 # Example usage
 alpha_probs = np.random.rand(8,8)
