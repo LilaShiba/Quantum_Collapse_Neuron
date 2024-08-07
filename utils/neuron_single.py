@@ -16,22 +16,28 @@ class Cell():
         # Will hold input data | I of I/O
         self.alpha: List[float] = kwargs.get('inputs_alpha', [0.0, 0.0])
         self.beta: List[float] = kwargs.get('inputs_beta', [0.0, 0.0])
-        # Ensure Compatiability 
+        
+        # Ensure Compatibility 
         self.entangle: np.ndarray = kwargs.get('weights', self._entangle_probs(self.alpha, self.beta))
 
         # Neural Net Settings (each cell diverse)
         self.bias: float = kwargs.get('bias', np.random.random())
         self.learning_rate: float = kwargs.get('learning_rate', np.random.random())
+        
         # Value (think dot product or collapsed state to 1D)
         self.state: float = kwargs.get('state', np.random.random())
         self.output: float = kwargs.get('output', np.dot(self.alpha, self.beta))
         self.loss_gradient: np.ndarray = kwargs.get('loss_gradient', None)
         self.last_input: np.ndarray = kwargs.get('last_input', None)
-        # x,y,z
-        self.pos: np.ndarray = kwargs.get('pos', np.array([0, 0, 0]))
+        
+        # x, y, z
+        self.pos: np.ndarray = np.array(kwargs.get('pos', [0, 0, 0]))
         self.mag: float = kwargs.get('mag', 0)
+        
         # orientation radians
         self.psi, self.theta = self.get_orientation()
+        self.x, self.y, self.z = self.get_cartesian_coords()
+        self.pos = np.array([self.x, self.y, self.z])
         self.prob_dist_matrix = self.get_prob_distro()
 
         # connections
@@ -42,9 +48,10 @@ class Cell():
         Calculates direction from 1x3 vector pos
         '''
         x, y, z = self.pos
-        self.psi = np.arctan2(y, x)  # azimuth
-        self.theta = np.arctan2(z, np.sqrt(x**2 + y**2))  # polar angle
-        return self.psi, self.theta
+        
+        psi = np.arctan2(y, x)  # azimuth
+        theta = np.arccos(z / np.sqrt(x**2 + y**2 + z**2))  # polar angle
+        return psi, theta
 
     def _entangle_probs(self, alpha: List[float], beta: List[float]) -> np.ndarray:
         """
@@ -67,14 +74,24 @@ class Cell():
         '''
         Creates a normalized probability distribution matrix
         from alpha and beta probabilities.
+        u⊗v A = ui * vi
         '''
         prob_dist_matrix = self._entangle_probs(self.alpha, self.beta)
         return prob_dist_matrix
+    
+    def get_cartesian_coords(self) -> Tuple[float, float, float]:
+        # Compute Cartesian coordinates
+        x = np.sin(self.theta) * np.cos(self.psi)
+        y = np.sin(self.theta) * np.sin(self.psi)
+        z = np.cos(self.theta)
+        return x, y, z
+    
 
 # Example usage
-alpha_probs = [0.2, 0.8]
-beta_probs = [0.5, 0.5]
+alpha_probs = np.random.rand(8,8)
+beta_probs = np.random.rand(8,2)
 
-cell = Cell(inputs_alpha=alpha_probs, inputs_beta=beta_probs)
-prob_dist_matrix = cell.get_prob_distro()
-print("Probability Distribution Matrix:\n", prob_dist_matrix)
+cell = Cell(inputs_alpha=alpha_probs, inputs_beta=beta_probs, pos=[1.2, 2.3, 1.0])
+cell.get_cartesian_coords()
+print("Orientation (psi, theta):", cell.get_orientation())
+print("Cartesian Coordinates (x, y, z):", cell.get_cartesian_coords())
